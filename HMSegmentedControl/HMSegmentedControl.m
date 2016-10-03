@@ -410,6 +410,13 @@
             }
             
             CGFloat imageYOffset = roundf((CGRectGetHeight(self.frame) - self.selectionIndicatorHeight) / 2.0f);
+            
+
+            /**--change image y Offset--**/
+            imageYOffset = 5;
+            yOffset = imageYOffset + imageHeight + 2;
+            
+            
             CGRect imageRect = CGRectMake(imageXOffset, imageYOffset, imageWidth, imageHeight);
             CGRect textRect = CGRectMake(textXOffset, yOffset, textWidth, stringHeight);
             
